@@ -1,0 +1,16 @@
+{
+  "name": "static-site",
+  "version": "1.0.0",
+  "description": "A lightweight static site generator using HTML, CSS, JavaScript, and Node.js.",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "marked": "^15.0.6"
+  }
+}
