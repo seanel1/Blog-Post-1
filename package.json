@@ -1,16 +1,20 @@
 {
   "name": "static-site",
   "version": "1.0.0",
-  "description": "A lightweight static site generator using HTML, CSS, JavaScript, and Node.js.",
-  "main": "build.js",
+  "description": "A lightweight website built with HTML, CSS, JavaScript, and Node.js for build processes.",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "build": "node scripts/build.js",
+    "dev": "serve public"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "marked": "^15.0.6"
+    "fs-extra": "^11.3.0",
+    "gray-matter": "^4.0.3",
+    "marked": "^4.3.0",
+    "serve": "^14.2.4"
   }
 }

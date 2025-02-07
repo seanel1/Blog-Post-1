@@ -1,13 +1,24 @@
-# Simple Static Site Generator
+# Simple Static Website
 
-A lightweight static site generator using HTML, CSS, JavaScript, and Node.js.
+A lightweight website built with HTML, CSS, JavaScript, and Node.js for build processes.
 
 ## Project Structure
 
-##plan
+## Features
+- Simple landing page
+- Blog with Markdown support
+- Static pages (About, FAQ)
+- Contact form
+- Newsletter integration (ConvertKit)
 
-1. make a simple landing page
-2. Make a template for a blog post
-3. Make a mark down -> html converter
-4. simple integration for convertkit
+## Development
+1. Install dependencies: `npm install`
+2. Run development server: `npm run dev`
+3. Build site: `npm run build`
+
+##
+1. make a simple landing page 
+2. make a template for a blog post
+3. Make a Markdown -> HTML converter
+4. Simple integration for Convertkit
 5. add a contact form
