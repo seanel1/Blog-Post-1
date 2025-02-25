@@ -16,22 +16,11 @@ async function build() {
     await fs.copy('./src/styles', './public/styles');
     await fs.copy('./src/scripts', './public/scripts');
     
-    // Read base template
+    // Copy index.html directly
+    await fs.copy('./src/index.html', './public/index.html');
+    
+    // Read base template for other pages
     const baseTemplate = await fs.readFile('./src/templates/base.html', 'utf-8');
-    
-    // Process the index page first
-    const indexContent = await fs.readFile('./src/content/pages/index.md', 'utf-8');
-    const { data: indexData, content: indexMarkdownContent } = matter(indexContent);
-    const indexHtml = marked(indexMarkdownContent);
-    
-    // Write index.html to the root of public directory
-    await fs.writeFile(
-        './public/index.html',
-        processTemplate(baseTemplate, {
-            title: indexData.title,
-            content: indexHtml
-        })
-    );
     
     // Process blog posts
     const blogFiles = await fs.readdir('./src/content/blog');
